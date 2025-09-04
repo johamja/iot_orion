@@ -30,6 +30,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
+            ls
             cd /home/ubuntu/app
             sudo docker-compose down || true
             sudo docker-compose up -d --build
