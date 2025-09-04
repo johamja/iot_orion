@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
-          source: "."
+          source: "./"
           target: "/home/***/app"
 
       - name: Deploy via SSH and run Docker
